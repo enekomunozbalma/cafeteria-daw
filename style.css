@@ -1,0 +1,58 @@
+/* Estilo azulado */
+:root {
+	--azul-principal: #2563eb;
+	--azul-oscuro: #0f172a;
+	--azul-claro: #dbeafe;
+	--fondo: #eff6ff;
+
+    --verde-principal: #10b981;
+    --verde-oscuro: #064e3b;
+    --verde-claro: #d1fae5;
+    
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	background: linear-gradient(135deg, var(--fondo), #bfdbfe);
+	color: var(--azul-oscuro);
+	font-family: Arial, sans-serif;
+}
+
+button,
+.button {
+	padding: 0.7rem 1.2rem;
+	border: 0;
+	border-radius: 0.5rem;
+	background: var(--azul-principal);
+	color: #fff;
+	cursor: pointer;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+	background: #1d4ed8;
+	transform: translateY(-2px);
+}
+
+input,
+textarea,
+select {
+	border: 1px solid #93c5fd;
+	border-radius: 0.5rem;
+	padding: 0.7rem;
+	background: #fff;
+	color: var(--azul-oscuro);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 2px solid var(--azul-principal);
+	outline-offset: 2px;
+}
